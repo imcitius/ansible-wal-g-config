@@ -4,3 +4,10 @@
 walg_script_path: /var/lib/pgsql/bin
 walg_bucket: "wal-g"
 walg_prefix: "backup"
+
+postgresql_backups_retain: 14
+postgresql_admin_user: postgres
+postgresql_admin_db: postgres
+
+s3cmd_secret_key: ""
+s3cmd_access_key: ""
