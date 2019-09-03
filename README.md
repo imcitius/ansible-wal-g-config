@@ -45,7 +45,7 @@ passed in as parameters) is always nice for users too:
 
     - hosts: servers
       roles:
-         - { role: ansible_wal_g_config }
+         - { role: imcitius.ansible_wal_g_config }
 
 License
 -------
