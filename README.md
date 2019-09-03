@@ -1,0 +1,2 @@
+# wal-g-config.role
+
