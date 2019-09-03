@@ -1,0 +1,22 @@
+---
+
+- name: create scripts directory
+  file:
+    path: "{{ walg_script_path }}"
+    state: directory
+    owner: "{{ s3cmd_user }}"
+    group: root
+    mode: 0755
+
+- name: put scripts
+  template:
+    src: "{{ item }}.j2"
+    dest: "{{ walg_script_path }}/{{ item }}"
+    owner: "{{ s3cmd_user }}"
+    group: "{{ s3cmd_user }}"
+    mode: 0755
+  loop:
+    - archive_wal.sh
+    - base_backup.sh
+    - rotate_backup.sh
+    - walg_env.sh

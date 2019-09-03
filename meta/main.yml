@@ -1,0 +1,25 @@
+---
+galaxy_info:
+  author: Ilya Rubinchik
+  description: Config wal-g environment and backup scripts
+  company: Ilya Rubinchik
+  license: BSD
+  min_ansible_version: 2.5
+
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+    - name: Ubuntu
+      versions:
+        - vivid
+        - xenial
+    - name: Debian
+      versions:
+        - jessie
+
+  galaxy_tags:
+    - backup
+    - postgresql
+    - system

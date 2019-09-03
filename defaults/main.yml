@@ -1,0 +1,6 @@
+---
+# defaults file for wal-g-config.role
+
+walg_script_path: /var/lib/pgsql/bin
+walg_bucket: "wal-g"
+walg_prefix: "backup"
